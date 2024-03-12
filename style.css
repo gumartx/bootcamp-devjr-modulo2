@@ -1,15 +1,22 @@
 body {
     background-color: #F5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .container {
     background-color: #e9e9e9;
     width: 600px;
     margin: auto;
+    box-shadow: 1px 3px 8px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .header {
-    padding: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
 }
 
 .flex-container {
@@ -17,4 +24,18 @@ body {
     background-color: #006a6a;
     justify-content: space-around;
     padding: 20px;
+}
+
+.header-title {
+    font-weight: 700;
+    color: #006f6f;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.header-subtitle{
+    font-weight: 500;
+    color: #009e9e;
+    font-size: 18px;
+    margin-bottom: 15px;
 }
