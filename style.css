@@ -13,10 +13,7 @@ body {
 }
 
 .header {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    align-content: space-around;
+    padding: 2.5rem;
 }
 
 .flex-container {
@@ -27,54 +24,54 @@ body {
 .header-title {
     font-weight: 700;
     color: #006f6f;
-    font-size: 32px;
-    margin-bottom: 20px;
+    font-size: 2rem;
+    margin-bottom: 1.2rem;
 }
 
 .header-subtitle{
     font-weight: 500;
     color: #009e9e;
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 1.2rem;
+    margin-bottom: 0.9rem;
 }
 
 .col-1 {
     background-color: #006a6a;
-    padding: 20px;
+    padding: 0.9rem;
     color: #fff;
     width: 50%;
 }
 
 .col-2 {
     background-color: #009e9e;
-    padding: 10px 20px;
+    padding: 0.6rem 0.9rem;
     color: #fff;
     width: 50%;
 }
 
 .subscription-title {
-    font-size: 20px;
+    font-size: 1.2rem;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 1.2rem;
 }
 
 .price {
-    font-size: 26px;
+    font-size: 1.6rem;
     font-weight: 700;
 }
 
 .month {
-    font-size: 14px;
+    font-size: 0.9rem;
     font-style: italic;
-    margin-left: 15px;
+    margin-left: 0.9rem;
 }
 
 .button {
     margin-top: 20px;
-    padding: 15px 32px;
+    padding: 0.9rem 2rem;
     width: 100%;
     color:#006a6a;
-    font-size: 16px;
+    font-size: 1rem;
     border: none;
     border-radius: 4px;
     background-color: #ccc;
@@ -87,4 +84,23 @@ body {
 
 .image-group {
     text-align: center;
+}
+
+@media (max-width: 620px) {
+    html {
+        font-size: 14px;
+    }
+
+    .flex-container {
+        flex-direction: column;
+    }
+
+    .col-1, .col-2 {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .container {
+        width: 95%;
+    }
 }
